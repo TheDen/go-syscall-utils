@@ -1,5 +1,5 @@
-// Package system returns system information
-package system
+// Package to parse syscalls
+package syslib
 
 import (
 	"syscall"

@@ -2,18 +2,18 @@ package main
 
 import (
 	"fmt"
-	"github.com/TheDen/system"
+	"github.com/theden/system/syslib"
 	"log"
 )
 
 func main() {
 	filesystem := "/"
-	inodes, err := system.Inodes(filesystem)
+	inodes, err := syslib.Inodes(filesystem)
 	if err != nil {
 		log.Fatalln(err)
 	}
 	fmt.Println(inodes)
-	data, err := system.Uptime()
+	data, err := syslib.Uptime()
 	if err != nil {
 		log.Fatalln(err)
 	}
